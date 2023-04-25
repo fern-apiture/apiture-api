@@ -13,3 +13,6 @@ auth-schemes:
     name: acessToken
 error-discrimination:
   strategy: status-code
+default-environment: Production
+environments: 
+  Production: https://api.apiture.com/banking

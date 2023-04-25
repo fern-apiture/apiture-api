@@ -17,4 +17,6 @@ groups:
           token: ${FERN_NPM_TOKEN}
         github:
           repository: fern-apiture/apiture-node
+        config: 
+          namespaceExport: Apiture
   
