@@ -1,4 +1,4 @@
-# {Company} API
+# Apiture API
 
 Tagging a release on this repository will update the:
 
