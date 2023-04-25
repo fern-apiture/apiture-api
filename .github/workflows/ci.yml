@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   fern-check:
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
