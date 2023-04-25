@@ -2,10 +2,7 @@
 
 Tagging a release on this repository will update the:
 
-- [Node.js SDK repo](https://github.com/fern-{company}/{company}-node)
-- [OpenAPI spec repo](https://github.com/fern-{company}/{company}-openapi)
-- [Postman collection repo](https://github.com/fern-{company}/{company}-postman)
-- _More SDKs to come..._
+- [Node.js SDK repo](https://github.com/fern-apiture/apiture-node)
 
 ## What is in this repository?
 
