@@ -1,6 +1,15 @@
 name: api
-auth: bearer
-environments:
-  Production: https://api.example.com
-  Sandbox: https://sandbox.example.com
-default-environment: Production
+display-name: Apiture Digital Banking
+headers: 
+  API-Key:
+    name: apiKey
+    type: optional<string>
+auth: acessToken
+auth-schemes:
+  acessToken: 
+    header: Authorization
+    type: string
+    prefix: "Bearer "
+    name: acessToken
+error-discrimination:
+  strategy: status-code

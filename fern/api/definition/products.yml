@@ -1,0 +1,60 @@
+types: 
+  productReference:
+    docs: A reference to a banking product.
+    properties:
+      type: productType
+      code:
+        docs: >-
+          The product's product code. Codes are unique to the financial
+          institution.
+        type: string
+      label:
+        docs: A human-readable label for this banking product.
+        type: string
+      description:
+        docs: A human-readable description of this banking product.
+        type: string
+
+  productType:
+    docs: >+
+      The type (or category) of bank account.
+      <strong><code>productType</code></strong> strings may have one of the
+      following
+      [enumerated
+      values](https://dx.apiture.com/docs/api-documentation/concepts/label-groups#enumerations):
+      <table>
+      <tr>
+        <th>Value</th><th>Description</th>
+      </tr>
+      <tr>
+          <td><strong><code>savings</code></strong></td><td>Savings: <p>Savings Account</p>
+      </td>
+          </tr>
+      <tr>
+          <td><strong><code>checking</code></strong></td><td>Checking: <p>Checking Account</p>
+      </td>
+          </tr>
+      <tr>
+          <td><strong><code>cd</code></strong></td><td>CD: <p>Certificate of Deposit Account</p>
+      </td>
+          </tr>
+      <tr>
+          <td><strong><code>ira</code></strong></td><td>IRA: <p>Individual Retirement Account</p>
+      </td>
+          </tr>
+      <tr>
+          <td><strong><code>loan</code></strong></td><td>Loan: <p>Loan Account</p>
+      </td>
+          </tr>
+      <tr>
+          <td><strong><code>creditCard</code></strong></td><td>Credit Card: <p>Credit Card Account</p>
+      </td>
+          </tr>
+      </table>
+    enum:
+      - savings
+      - checking
+      - cd
+      - ira
+      - loan
+      - creditCard
