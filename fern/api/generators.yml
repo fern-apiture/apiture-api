@@ -1,12 +1,5 @@
 default-group: local
 groups:
-  local:
-    generators:
-      - name: fernapi/fern-typescript-sdk
-        version: 0.5.25
-        output:
-          location: local-file-system
-          path: ../../sdks/typescript
   publish:
     generators:
       - name: fernapi/fern-typescript-sdk
@@ -18,5 +11,5 @@ groups:
         github:
           repository: fern-apiture/apiture-node
         config: 
-          namespaceExport: Apiture
+          namespaceExport: ApitureBanking
   
