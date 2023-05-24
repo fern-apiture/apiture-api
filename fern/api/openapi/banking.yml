@@ -117,6 +117,8 @@ paths:
       operationId: listAccounts
       x-apiture-api: bankingAccounts
       x-apiture-group: accounts
+      x-fern-sdk-method-name: listAccounts
+      x-fern-sdk-group-name: accounts
       description: Return a paginated list of the customer's accounts, consisting of internal accounts at this financial institution and accounts at other financial institutions, if any.
       parameters:
         - name: productType
@@ -174,6 +176,8 @@ paths:
       operationId: getAccount
       x-apiture-api: bankingAccounts
       x-apiture-group: accounts
+      x-fern-sdk-method-name: getAccount
+      x-fern-sdk-group-name: accounts
       description: Return details of the customer's internal account.
       tags:
         - Accounts
@@ -200,6 +204,8 @@ paths:
       operationId: listAccountBalances
       x-apiture-api: bankingAccounts
       x-apiture-group: accounts
+      x-fern-sdk-method-name: listAccountBalances
+      x-fern-sdk-group-name: accounts
       description: >-
         Return a list of the requested internal accounts' balances. The `accounts` query parameter is a list of account IDs which typically comes from the `getAccounts` operation
         response. The returned list does not include external accounts. The caller must have entitlements to view each account's details, as indicated by a `true` value for
@@ -303,6 +309,8 @@ paths:
       operationId: listAccountJointOwners
       x-apiture-api: bankingAccounts
       x-apiture-group: accountJointOwners
+      x-fern-sdk-method-name: listAccountJointOwners
+      x-fern-sdk-group-name: accountJointOwners
       tags:
         - Account Joint Owners
       responses:
@@ -332,6 +340,8 @@ paths:
       operationId: listEligibleAchAccounts
       x-apiture-api: bankingAccounts
       x-apiture-group: accounts
+      x-fern-sdk-method-name: listEligibleAchAccounts
+      x-fern-sdk-group-name: accounts
       parameters:
         - $ref: '#/components/parameters/accountAllowsRequiredQueryParam'
         - $ref: '#/components/parameters/secCodeQueryParam'
@@ -373,6 +383,8 @@ paths:
       operationId: listEligibleOverdraftAccounts
       x-apiture-api: bankingAccounts
       x-apiture-group: overdraftProtection
+      x-fern-sdk-method-name: listEligibleOverdraftAccounts
+      x-fern-sdk-group-name: overdraftProtection
       parameters:
         - $ref: '#/components/parameters/startQueryParam'
         - $ref: '#/components/parameters/limitQueryParam'
@@ -419,6 +431,8 @@ paths:
       operationId: getOverdraftProtection
       x-apiture-api: bankingAccounts
       x-apiture-group: overdraftProtection
+      x-fern-sdk-method-name: getOverdraftProtection
+      x-fern-sdk-group-name: overdraftProtection
       tags:
         - Overdraft Protection
       responses:
@@ -467,6 +481,8 @@ paths:
       operationId: patchOverdraftAccounts
       x-apiture-api: bankingAccounts
       x-apiture-group: overdraftProtection
+      x-fern-sdk-method-name: patchOverdraftAccounts
+      x-fern-sdk-group-name: overdraftProtection
       tags:
         - Overdraft Protection
       requestBody:
@@ -544,6 +560,8 @@ paths:
       operationId: createJointOwnerInvitation
       x-apiture-api: bankingAccounts
       x-apiture-group: jointOwners
+      x-fern-sdk-method-name: createJointOwnerInvitation
+      x-fern-sdk-group-name: jointOwners
       tags:
         - Account Joint Owners
       requestBody:
@@ -592,6 +610,8 @@ paths:
       operationId: lookUpInstitutionByLocator
       x-apiture-api: bankingInstitutions
       x-apiture-group: institutions
+      x-fern-sdk-method-name: lookUpInstitutionByLocator
+      x-fern-sdk-group-name: institutions
       tags:
         - Institutions
       parameters:
@@ -668,6 +688,8 @@ paths:
       operationId: listTransferSchedule
       x-apiture-api: bankingInstitutions
       x-apiture-group: institutions
+      x-fern-sdk-method-name: listTransferSchedule
+      x-fern-sdk-group-name: institutions
       tags:
         - Schedules
       parameters:
@@ -754,6 +776,8 @@ paths:
       operationId: getCutoffTimes
       x-apiture-api: bankingInstitutions
       x-apiture-group: institutions
+      x-fern-sdk-method-name: getCutoffTimes
+      x-fern-sdk-group-name: institutions
       tags:
         - Schedules
       parameters:
@@ -814,6 +838,8 @@ paths:
       operationId: getTransferDateRestrictions
       x-apiture-api: bankingInstitutions
       x-apiture-group: institutions
+      x-fern-sdk-method-name: getTransferDateRestrictions
+      x-fern-sdk-group-name: institutions
       tags:
         - Schedules
       security:
@@ -911,6 +937,8 @@ paths:
       operationId: listTransactions
       x-apiture-api: bankingTransactions
       x-apiture-group: transactions
+      x-fern-sdk-method-name: listTransactions
+      x-fern-sdk-group-name: transactions
       tags:
         - Transactions
       parameters:
@@ -1123,6 +1151,8 @@ paths:
       operationId: listTransactionCategories
       x-apiture-api: bankingTransactions
       x-apiture-group: transactionCategories
+      x-fern-sdk-method-name: listTransactionCategories
+      x-fern-sdk-group-name: transactionCategories
       tags:
         - Transaction Categories
       parameters:
@@ -1167,6 +1197,8 @@ paths:
       operationId: listTransfers
       x-apiture-api: bankingTransfers
       x-apiture-group: transfers
+      x-fern-sdk-method-name: listTransfers
+      x-fern-sdk-group-name: transfers
       tags:
         - Transfers
       parameters:
@@ -1243,6 +1275,8 @@ paths:
       operationId: createTransfer
       x-apiture-api: bankingTransfers
       x-apiture-group: transfers
+      x-fern-sdk-method-name: createTransfer
+      x-fern-sdk-group-name: transfers
       tags:
         - Transfers
       parameters:
@@ -1288,6 +1322,8 @@ paths:
       operationId: getTransfer
       x-apiture-api: bankingTransfers
       x-apiture-group: transfers
+      x-fern-sdk-method-name: getTransfer
+      x-fern-sdk-group-name: transfers
       tags:
         - Transfers
       responses:
@@ -1319,6 +1355,8 @@ paths:
       operationId: patchTransfer
       x-apiture-api: bankingTransfers
       x-apiture-group: transfers
+      x-fern-sdk-method-name: patchTransfer
+      x-fern-sdk-group-name: transfers
       tags:
         - Transfers
       parameters:
@@ -1360,6 +1398,8 @@ paths:
       operationId: deleteTransfer
       x-apiture-api: bankingTransfers
       x-apiture-group: transfers
+      x-fern-sdk-method-name: deleteTransfer
+      x-fern-sdk-group-name: transfers
       tags:
         - Transfers
       responses:
@@ -1461,6 +1501,21 @@ components:
         - view
         - viewCards
         - manageCards
+      x-fern-enum: 
+        billPay:
+          description: Include each account where the caller is allowed to use the bill pay feature.
+        transferFrom:
+          description: Include each account where the caller is allowed to transfer money from the account.
+        transferTo:
+          description: Include each account where the caller is allowed to transfer money into the account.
+        mobileCheckDeposit:
+          description: Include each account where the caller is allowed to deposit mobile checks.
+        view:
+          description: Include each account where the caller is allowed to view full account details (balances, full account number, transactions, etc).
+        viewCards:
+          description: Include each account where the caller is allowed to view debit card details.
+        manageCards:
+          description: Include each account where the caller is allowed to manage debit card details.
       x-apiture-version: 1.0.0
     accountPermissions:
       title: Account Permissions (v0.3.0)
