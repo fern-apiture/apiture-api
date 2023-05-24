@@ -1501,6 +1501,21 @@ components:
         - view
         - viewCards
         - manageCards
+      x-fern-enum: 
+        billPay:
+          description: Include each account where the caller is allowed to use the bill pay feature.
+        transferFrom:
+          description: Include each account where the caller is allowed to transfer money from the account.
+        transferTo:
+          description: Include each account where the caller is allowed to transfer money into the account.
+        mobileCheckDeposit:
+          description: Include each account where the caller is allowed to deposit mobile checks.
+        view:
+          description: Include each account where the caller is allowed to view full account details (balances, full account number, transactions, etc).
+        viewCards:
+          description: Include each account where the caller is allowed to view debit card details.
+        manageCards:
+          description: Include each account where the caller is allowed to manage debit card details.
       x-apiture-version: 1.0.0
     accountPermissions:
       title: Account Permissions (v0.3.0)
